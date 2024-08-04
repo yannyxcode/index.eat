@@ -1,7 +1,7 @@
 .body {
   display: grid;
-  padding-left: 123px;
-  padding-right: 123px;
+  /* padding-left: 123px;
+  padding-right: 123px; */
 }
 
 .header {
@@ -10,6 +10,9 @@
   height: 80px;
   margin-top: auto;
   margin-bottom: auto;
+
+  padding-left: 123px;
+  padding-right: 123px;
 }
 
 .header__nav {
@@ -94,19 +97,20 @@
 
 .main {
   display: grid;
-  /* grid-template-rows: repeat(5, 1fr); */
 }
 
 .section__banner {
   position: relative;
   margin-bottom: 50px;
+  padding-left: 123px;
+  padding-right: 123px;
 }
 
 .section__banner-all-elements {
   position: absolute;
   z-index: 3;
   top: 80px;
-  left: 99px;
+  left: 225px;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   row-gap: 30px;
@@ -273,6 +277,8 @@
   height: 382px;
   position: relative;
   margin-bottom: 110px;
+  padding-left: 123px;
+  padding-right: 123px;
 }
 
 .section__price-about-pie-all {
@@ -369,4 +375,253 @@
 .section__image-salad {
   width: 570px;
   height: 380px;
+}
+
+.section__delivery {
+  margin-left: 0.3px;
+  margin-bottom: 97px;
+  padding-left: 123px;
+  padding-right: 123px;
+}
+
+.section__delivery-title-text {
+  font-size: 32px;
+  line-height: 23px;
+  font-family: "Roboto";
+  letter-spacing: 0.2px;
+  color: #000;
+}
+
+.section__delivery-food {
+  margin-top: 47px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 30px;
+}
+
+.section__delivery-food-card {
+  width: 275px;
+  height: 182px;
+  background-color: #e1e1e1;
+  border-radius: 18px;
+  font-size: 20px;
+  font-family: "Roboto-Medium";
+  letter-spacing: 0.2px;
+  position: relative;
+  cursor: pointer;
+}
+
+.card-healthy {
+  background-image: url(../image/cardjpeg/Rectangle\ 1.jpg);
+}
+
+.card-text-healthy {
+  background-color: #d0fd89;
+  color: #49494f;
+}
+
+.card-veg {
+  background-image: url(../image/cardjpeg/Rectangle\ 2.jpg);
+}
+
+.card-text-veg {
+  background-color: #aebc41;
+  color: #fff;
+}
+
+.card-meat {
+  background-image: url(../image/cardjpeg/Rectangle\ 3.jpg);
+}
+
+.card-text-meat {
+  background-color: #b86b78;
+  color: #fff;
+}
+
+.card-fowl {
+  background-image: url(../image/cardjpeg/Rectangle\ 4.jpg);
+}
+
+.card-text-fowl {
+  background-color: #d68334;
+  color: #fff;
+}
+
+.card-fish {
+  background-image: url(../image/cardjpeg/Rectangle\ 5.jpg);
+}
+
+.card-text-fish {
+  background-color: #cd6255;
+  color: #fff;
+}
+
+.card-for-children {
+  background-image: url(../image/cardjpeg/Rectangle\ 6.jpg);
+}
+
+.card-text-children {
+  background-color: #fffdbf;
+  color: #49494f;
+}
+
+.card-for-parents {
+  background-image: url(../image/cardjpeg/Rectangle\ 7.jpg);
+}
+
+.card-text-parents {
+  background-color: #f6fdc8;
+  color: #49494f;
+}
+
+.card-holiday {
+  background-image: url(../image/cardjpeg/Rectangle\ 8.jpg);
+}
+
+.card-text-holiday {
+  background-color: #fef7fe;
+  color: #49494f;
+}
+
+.overlay-border {
+  position: absolute;
+  border: 2px solid #fff;
+  width: 275px;
+  height: 182px;
+  border-radius: 18px;
+}
+
+.section__delivery-food-card-text {
+  padding: 5px 10px;
+  border-radius: 30px;
+  display: inline-block;
+  margin: 16px 10px;
+}
+
+.section__category {
+  background-color: #f6f6f6;
+  padding: 40px 123px 60px;
+}
+
+.section__category-title-text {
+  font-size: 32px;
+  font-family: "Roboto";
+  color: #000;
+}
+
+.section__category-all-text {
+  display: flex;
+  column-gap: 58px;
+  padding-top: 40px;
+  padding-bottom: 62px;
+}
+
+.category-link {
+  font-size: 20px;
+  color: #49494f;
+  cursor: pointer;
+}
+
+.category-link--active {
+  color: #f37321;
+}
+
+.section__cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 60px;
+}
+
+.section__card-products {
+  width: 270px;
+  height: 471px;
+  background-color: #fff;
+  box-shadow: 0px 4px 40px rgb(0 0 0 / 0.1);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.section__card-image {
+  background-image: url(../image/pricejpg/Rectangle\ 11.jpg);
+  background-size: cover;
+  width: 270px;
+  height: 192px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.section__card-text-all-elements {
+  padding: 21px 25px;
+  height: 279px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.section__card-text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+
+.section__card-text-title {
+  color: #000;
+  font-size: 20px;
+  font-family: "Roboto-Medium";
+}
+
+.section__card-text-description {
+  color: #b9b9be;
+  font-size: 14px;
+  font-family: "Roboto-Medium";
+  line-height: 23px;
+}
+
+.section__card-price-cart {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-text-price {
+  font-size: 23px;
+  color: #4b4b51;
+  font-family: "Roboto-Medium";
+  letter-spacing: 0.2px;
+}
+
+.card-text-weight {
+  font-size: 17px;
+  color: #aaaab1;
+  font-family: "Roboto-Medium";
+  letter-spacing: 0.2px;
+}
+
+.card-button {
+  border: 2px solid #f37321;
+  border-radius: 33px;
+  background-color: transparent;
+  color: #f37321;
+  font-family: "Roboto-Medium";
+  font-size: 16px;
+  padding: 15px 23px;
+  cursor: pointer;
+}
+
+.section__cards-button {
+  display: flex;
+  justify-content: center;
+}
+
+.cards-button-more {
+  border: 2px solid #f37321;
+  border-radius: 33px;
+  background-color: transparent;
+  color: #f37321;
+  font-family: "Roboto-Medium";
+  font-size: 16px;
+  padding: 15px 105px;
 }
