@@ -1,7 +1,5 @@
 .body {
   display: grid;
-  /* padding-left: 123px;
-  padding-right: 123px; */
 }
 
 .header {
@@ -10,7 +8,6 @@
   height: 80px;
   margin-top: auto;
   margin-bottom: auto;
-
   padding-left: 123px;
   padding-right: 123px;
 }
@@ -57,14 +54,19 @@
 }
 
 .header__button-enter {
-  padding: 16px 29px;
+  padding: 14px 27px;
   border-radius: 50px;
-  border: none;
+  border: 2px solid #ebebeb;
   font-size: 14px;
   color: #000;
   background-color: #ebebeb;
   letter-spacing: 0.2px;
   cursor: pointer;
+  transition: 0.2s;
+}
+
+.header__button-enter:hover {
+  border-color: #5f5f61;
 }
 
 .header__cart {
@@ -79,6 +81,12 @@
 .header__cart-image {
   display: flex;
   align-items: center;
+  transition: 0.5s;
+  transform: scale(1);
+}
+
+.header__cart:hover .header__cart-image {
+  transform: scale(1.2);
 }
 
 .header__cart-length {
@@ -149,6 +157,13 @@
   font-family: "Roboto-Medium";
   letter-spacing: 0.2px;
   cursor: pointer;
+  transition: 0.2s;
+}
+
+.section__button-order:hover {
+  background-color: #f6f6f6;
+  color: #f47322;
+  border-color: #f47322;
 }
 
 #autoplay-carousel-banner {
@@ -345,14 +360,19 @@
 }
 
 .section__button-cart {
-  padding: 16px 50px;
+  padding: 14px 48px;
   border-radius: 50px;
-  border: none;
+  border: 2px solid #fff;
   color: #5f5f61;
   font-size: 16px;
   letter-spacing: 0.2px;
   font-family: "Roboto-Medium";
   cursor: pointer;
+  transition: 0.2s;
+}
+
+.section__button-cart:hover {
+  border-color: #5f5f61;
 }
 
 .section__image-price-pie {
@@ -521,6 +541,11 @@
   font-size: 20px;
   color: #49494f;
   cursor: pointer;
+  transition: 0.2s;
+}
+
+.category-link:hover {
+  color: #f37321;
 }
 
 .category-link--active {
@@ -609,6 +634,13 @@
   font-size: 16px;
   padding: 15px 23px;
   cursor: pointer;
+  transition: 0.2s;
+}
+
+.card-button:hover {
+  background-color: #ffa871;
+  color: #fff;
+  border-color: #ffa871;
 }
 
 .section__cards-button {
@@ -624,4 +656,155 @@
   font-family: "Roboto-Medium";
   font-size: 16px;
   padding: 15px 105px;
+  transition: 0.2s;
+}
+
+.cards-button-more:hover {
+  background-color: #ffa871;
+  color: #fff;
+  border-color: #ffa871;
+}
+
+.section__advantages {
+  padding: 90px 123px 202px;
+}
+
+.section__advantages-title-text {
+  font-size: 32px;
+  color: #000;
+}
+
+.section__advantages-cards {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 52px;
+}
+
+.section__advantages-cards-all {
+  width: 270px;
+  height: 296px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0px 4px 40px rgb(0 0 0 / 0.1);
+  border-radius: 18px;
+  padding: 30px 23px 25px;
+  row-gap: 25px;
+  transition: 0.2s;
+}
+
+.section__advantages-cards-all:hover {
+  background-color: #f37321;
+}
+
+.section__advantages-cards-all:hover .section__advantages-card-title-text {
+  color: #fff;
+}
+
+.section__advantages-cards-all:hover .section__advantages-text {
+  color: #fff;
+}
+
+.section__advantages-cards-all:hover .section__advantages-image {
+  filter: invert(100%) sepia(1%) saturate(1341%) hue-rotate(187deg)
+    brightness(200%) contrast(100%);
+}
+
+.section__advantages-card-image {
+  width: 60px;
+  height: 60px;
+}
+
+.section__advantages-image {
+  width: 100%;
+  height: 100%;
+}
+
+.section__advantages-card-texts {
+  display: flex;
+  flex-direction: column;
+  row-gap: 13px;
+}
+
+.section__advantages-card-title {
+  height: 46px;
+}
+
+.section__advantages-card-text {
+  height: 88px;
+}
+
+.section__advantages-card-title-text {
+  text-align: center;
+  font-size: 16px;
+  color: #000;
+  font-family: "Roboto-Medium";
+  line-height: 23px;
+  letter-spacing: 0.2px;
+}
+
+.section__advantages-text {
+  text-align: center;
+  font-size: 14px;
+  color: #49494f;
+  line-height: 22px;
+  letter-spacing: 0.2px;
+}
+
+.image-car {
+  width: 70px;
+  height: 70px;
+}
+
+.footer {
+  background-color: #f6f6f6;
+  padding: 45px 123px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+}
+
+.footer__logo {
+  width: 205px;
+  height: 101px;
+}
+
+.footer__links a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1.2px;
+}
+
+.footer__social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer__social-wrapper {
+  width: 28px;
+  height: 28px;
+  background-color: #c4c4c4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+}
+
+.social-telegram {
+  padding-right: 3px;
+}
+
+.social {
+  width: 18px;
+  height: 18px;
 }
